@@ -11,11 +11,7 @@ python -m pip install pandas numpy matplotlib
 python figures/make_figures.py --results-dir outputs --output-dir figures/reproduced_figures
 ```
 
-The script writes twelve numbered PNGs and `figures/reproduced_figures/figure_manifest.json` with input and output SHA-256 checksums. To smoke-test without searching your whole outputs tree, use the included `sample_results/` folder:
-
-```powershell
-python figures/make_figures.py --results-dir outputs --output-dir figures/reproduced_figures
-```
+The script writes twelve numbered PNGs and `figures/reproduced_figures/figure_manifest.json` with input and output SHA-256 checksums.
 
 ## Required result files
 
