@@ -1,5 +1,7 @@
 # Aviation Delay Prediction: Temporal Generalisation, Market-Specific Training and Calibration
 
+[![DOI](https://zenodo.org/badge/DOI/YOUR_DOI.svg)](https://doi.org/10.5281/zenodo.23853945)
+
 Reproducibility repository for an empirical study of US domestic flight-delay prediction using Bureau of Transportation Statistics (BTS) On-Time Performance records from **January 2022 to December 2025**.
 
 The study investigates three questions:
