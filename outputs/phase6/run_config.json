@@ -1,0 +1,15 @@
+{
+  "input_dir": "data",
+  "output_dir": "outputs\\phase6",
+  "phase5_script": "06_calibration_robustness.py",
+  "train_cap": 300000,
+  "calibration_per_month": 15000,
+  "test_per_month": 15000,
+  "seeds": [
+    42,
+    123,
+    2026
+  ],
+  "bootstrap_reps": 1000,
+  "models": "both"
+}

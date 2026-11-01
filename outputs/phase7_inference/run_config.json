@@ -1,0 +1,13 @@
+{
+  "input_dir": "data",
+  "output_dir": "outputs/phase7_inference",
+  "seed": 42,
+  "training_size": 100000,
+  "per_month": 25000,
+  "target_per_month": 3000,
+  "target_share": 0.25,
+  "test_per_year": 10000,
+  "bootstrap_reps": 400,
+  "models": "both",
+  "pilot": false
+}

@@ -1,0 +1,3 @@
+Pearson chi-square of annual delay prevalence: chi2=7355.024, dof=3, p=0.
+Descriptive association only. Flights are dependent within airport, airline and date; do not interpret as a causal test or independent-flight inference.
+Missing year-month partitions: []

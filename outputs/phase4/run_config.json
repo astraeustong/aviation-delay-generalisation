@@ -1,0 +1,11 @@
+{
+  "input_dir": "data",
+  "output_dir": "outputs/phase4",
+  "train_per_month": 15000,
+  "test_per_month": 12000,
+  "train_size": 160000,
+  "test_size": 30000,
+  "bootstrap_reps": 200,
+  "seed": 42,
+  "models": "both"
+}

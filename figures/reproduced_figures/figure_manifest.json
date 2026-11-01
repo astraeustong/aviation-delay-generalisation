@@ -1,0 +1,97 @@
+{
+  "manuscript": "manuscript.docx, Figures 1-12 in appearance order",
+  "scope": "Archived experiment CSV to figure only; NOT raw BTS to fitted models",
+  "generator": "figures/make_figures.py",
+  "inputs": {
+    "monthly_audit": {
+      "path": "/mnt/data/monthly_audit.csv",
+      "sha256": "370789aea41eab225e31c458ba98822f3b65e79661f1add0c4ad5f4e172481a5"
+    },
+    "annual_model_metrics": {
+      "path": "/mnt/data/annual_model_metrics.csv",
+      "sha256": "36f7d40bc7d20fd459b43c79cc55e26867c92fb10c4bc8e51f2d14152c06a79e"
+    },
+    "monthly_model_metrics": {
+      "path": "/mnt/data/monthly_model_metrics.csv",
+      "sha256": "2ecf61c17a7bb17d4efde47e8f43e3f8e5a825013c655533c77ca0609cc9e69f"
+    },
+    "cross_market_weighted_monthly_summary": {
+      "path": "/mnt/data/cross_market_weighted_monthly_summary.csv",
+      "sha256": "607ad6715b05483c5b5d56e9f3a7bef5c87a972c1c2d93b2fc4aff5125885654"
+    },
+    "market_robustness_metrics(1)": {
+      "path": "/mnt/data/market_robustness_metrics(1).csv",
+      "sha256": "5e94364211ea4dcd4d727c5401ea69d8ee58f1fa6825a97c4d528c956c2e1a53"
+    },
+    "paired_inference_summary": {
+      "path": "/mnt/data/paired_inference_summary.csv",
+      "sha256": "d78ba427e6852d5f823ac1a4df5f2fcfe33a2180d052e02df3da75c42a750e00"
+    },
+    "calibration_window_annual": {
+      "path": "/mnt/data/calibration_window_annual.csv",
+      "sha256": "dd19278df854b9bea9ea2bbf598736812cad6fe12dc76a149c611ce83d4f16e7"
+    }
+  },
+  "figures": {
+    "1": {
+      "filename": "fig01_monthly_delay.png",
+      "caption": "Monthly prevalence of arrival delays of at least 15 minutes among eligible arrivals.",
+      "sha256": "b5c8ec72eb18dfe2a7070e9f126c80e5302389147001152c1f8d76d9f2e8a047"
+    },
+    "2": {
+      "filename": "fig02_temporal_auroc.png",
+      "caption": "Discrimination across chronological validation and two future test years.",
+      "sha256": "e3d1fc80f110dd11dbc802ea721afc4320b75cbee4b5c180602e72884ef844c3"
+    },
+    "3": {
+      "filename": "fig03_monthly_auroc.png",
+      "caption": "Monthly AUROC in 2024 and 2025.",
+      "sha256": "acf26a9e2086f1bfa6cd9b65267f56196823d5f9f1b052be8cd066e8dabab192"
+    },
+    "4": {
+      "filename": "fig04_crossmarket.png",
+      "caption": "Descriptive Phase 3 unseen-minus-seen weighted monthly AUROC for XGBoost in 2025.",
+      "sha256": "76304c8dc58ce265f990ded9d59951e01f4c607011db5234471d3ed56018e864"
+    },
+    "5": {
+      "filename": "fig05_market_gains.png",
+      "caption": "Mean market-specific AUROC gains across models, seeds, training sizes and test years.",
+      "sha256": "7841bc25671571154c3d6112805b9730ecc1d9c1405826d31390fd48a0ca0c94"
+    },
+    "6": {
+      "filename": "fig06_training_size.png",
+      "caption": "Mean included-minus-excluded AUROC by model and training-set size.",
+      "sha256": "5f28d097cfb62543d5eed4fd16b940dba68892733f64080059b4769fb7319b82"
+    },
+    "7": {
+      "filename": "fig07_paired_ci.png",
+      "caption": "Primary paired AUROC differences and unadjusted 95% departure-day cluster-bootstrap intervals.",
+      "sha256": "416da9703f0a6b6c5c2183a3a8f24350e85a272fb12714ee35c76a0969484751"
+    },
+    "8": {
+      "filename": "fig08_calibration_brier.png",
+      "caption": "Brier scores averaged over three random seeds for raw and recalibrated predictions.",
+      "sha256": "835015b96578a5450fc268d72a5f28800148baf5e49dff5bfc2822f068006b1f"
+    },
+    "9": {
+      "filename": "fig09_calibration_bias.png",
+      "caption": "Calibration-in-the-large in 2025; positive values indicate overprediction.",
+      "sha256": "385011b972a0ddb54752cc1756cb425c56a36fac2c542ae312b3080ed5e7e82b"
+    },
+    "10": {
+      "filename": "fig10_robustness_distribution.png",
+      "caption": "Distribution of included-minus-excluded AUROC differences by training size and model.",
+      "sha256": "4fc986a8a75938520726fcbcd5fbd4dc0ceccbe87ceaa918a7e1d6347b7baa82"
+    },
+    "11": {
+      "filename": "fig11_market_size_interaction.png",
+      "caption": "Market-specific mean AUROC gains across training sizes.",
+      "sha256": "ca80cf1a546486374c8ca4bccebb00f4dd1a9818fedef76e2610d045ece9e1b8"
+    },
+    "12": {
+      "filename": "fig12_calibration_year_interaction.png",
+      "caption": "Mean future-year Brier scores across three seeds and both model families.",
+      "sha256": "d8fd6b97698b022a3b7a12eae8768637c811a692346b3768c66b7132c765650d"
+    }
+  }
+}

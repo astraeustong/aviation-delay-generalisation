@@ -1,0 +1,10 @@
+{
+  "input_dir": "data",
+  "output_dir": "outputs\\phase5",
+  "train_cap": 400000,
+  "calibration_per_month": 30000,
+  "test_per_month": 30000,
+  "bootstrap_reps": 1000,
+  "seed": 42,
+  "models": "both"
+}

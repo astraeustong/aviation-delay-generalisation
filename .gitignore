@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# Large datasets
+data/raw/
+data/processed/
+*.parquet
+*.zip
+
+# Temporary files
+.ipynb_checkpoints/
+*.log
+~$*.docx
+
+# Windows
+Thumbs.db
+desktop.ini

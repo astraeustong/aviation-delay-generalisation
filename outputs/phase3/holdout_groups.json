@@ -1,0 +1,12 @@
+{
+  "Reporting_Airline": [
+    "WN",
+    "DL",
+    "AA"
+  ],
+  "Origin": [
+    "ATL",
+    "DFW",
+    "DEN"
+  ]
+}
