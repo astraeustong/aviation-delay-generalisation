@@ -86,9 +86,8 @@ The project was developed in sequential phases. Script names below reflect the r
 | 6. Calibration and shift | `06_calibration_robustness.py` | Raw, Platt and isotonic predictions; shift diagnostics |
 | 7. Calibration windows | `07_calibration_window_sensitivity.py` | Q4 vs H2 2023 recalibration |
 | 8. Robustness | `08_market_robustness_fixed.py` | Multiple training sizes and random seeds |
-| 9. Aggregate audit | `09_phase7_audit.py` | Result integrity and summary checks |
-| 10. Paired inference | `10_paired_prediction_inference.py` | Paired AUROC/Brier differences and clustered intervals |
-| Figures | `make_figures.py` and any supplementary plotting scripts | Manuscript figures from archived CSV outputs |
+| 9. Paired inference | `9_paired_prediction_inference.py` | Paired AUROC/Brier differences and clustered intervals |
+| Figures | figures/make_figures.py | Manuscript figures from archived CSV outputs |
 
 **Do not run every historical version blindly.** Use the corrected scripts that produced the final manuscript numbers; earlier pilot scripts and the superseded `08_market_robustness.py` should be clearly marked as exploratory if retained.
 
@@ -103,7 +102,7 @@ python 08_market_robustness_fixed.py --input-dir data --output-dir outputs/phase
 And the paired-inference stage used:
 
 ```powershell
-python 10_paired_prediction_inference.py --input-dir data --output-dir outputs/phase7_inference
+python 9_paired_prediction_inference.py --input-dir data --output-dir outputs/phase7_inference
 ```
 
 These are examples from the research workflow, **not a guarantee of a one-command clean run**. Run `python <script>.py --help`, confirm archive locations and dependencies, and document the tested commands and environment before release. Some scripts import helpers from other files in the repository root.
@@ -153,13 +152,19 @@ The calibration analyses indicate that recalibration using a short Q4 2023 windo
 5. Run the figure-generation script(s) on the archived result CSVs.
 6. Confirm that each figure and table in the manuscript has a documented source file and generation command.
 
-For the previously prepared nine-figure plotting package, the plotting command is:
+### Reproducing manuscript figures
+
+The manuscript contains 12 figures generated from the archived experimental results.
+
+To reproduce all 12 figures, run the following command from the repository root:
 
 ```powershell
-python make_figures.py --results-dir results --output-dir reproduced_figures
+python figures/make_figures.py --results-dir outputs --output-dir figures/reproduced_figures
 ```
 
-This command requires the expected `results/` inputs from that plotting package. If this repository uses `outputs/` instead, update the input mapping or provide the appropriate CSV copies. **The additional manuscript figures may require a second plotting script; include and document it before submission.**
+The script searches recursively within the `outputs/` directory for the required experimental CSV files and regenerates all 12 manuscript figures.
+
+**Reproducibility scope:** This procedure reproduces the figures from previously generated experimental results. Full reproduction from the original BTS flight records requires running the preprocessing and modelling scripts.
 
 ## Reproduction checklist
 

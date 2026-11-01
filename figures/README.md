@@ -1,6 +1,6 @@
 # Reproduce the 12 figures in the aviation manuscript
 
-This package matches the **figure numbering and content in the uploaded 20-page `manuscript.docx`**. The earlier script produced nine figures with a different numbering sequence; do not use its old manifest for this manuscript.
+This directory contains the scripts and documentation required to reproduce all 12 figures presented in the research manuscript Beyond Predictive Accuracy: Market-Specific Training and Calibration Stability in Large-Scale Airline Delay Prediction.
 
 ## Run inside your aviation repository
 
@@ -14,7 +14,7 @@ python figures/make_figures.py --results-dir outputs --output-dir figures/reprod
 The script writes twelve numbered PNGs and `figures/reproduced_figures/figure_manifest.json` with input and output SHA-256 checksums. To smoke-test without searching your whole outputs tree, use the included `sample_results/` folder:
 
 ```powershell
-python figures/make_figures.py --results-dir figures/sample_results --output-dir figures/reproduced_figures
+python figures/make_figures.py --results-dir outputs --output-dir figures/reproduced_figures
 ```
 
 ## Required result files
@@ -23,7 +23,7 @@ python figures/make_figures.py --results-dir figures/sample_results --output-dir
 - `annual_model_metrics.csv`: Fig. 2
 - `monthly_model_metrics.csv`: Fig. 3
 - `cross_market_weighted_monthly_summary.csv`: Fig. 4
-- `market_robustness_metrics(1).csv`: Figs. 5, 6, 10, 11 (or `market_robustness_metrics.csv` if it is the **corrected 216-row version**)
+- `market_robustness_metrics.csv`: Figs. 5, 6, 10, 11 (or `market_robustness_metrics.csv` if it is the **corrected 216-row version**)
 - `paired_inference_summary.csv`: Fig. 7
 - `calibration_window_annual.csv`: Figs. 8, 9, 12
 
